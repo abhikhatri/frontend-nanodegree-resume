@@ -19,11 +19,17 @@ var bio = {
 
 	"name": name,
 	"role": role,
-	"contact": "abhikhatri391@gmail.com",
-	"picture": "http://www.abhikhatri.com/build/img/avtaar.jpg",
+	"welcomeMessage": "Hello! Welcome to my awesome resume",
+	"contact": [
+		{
+			"twitter": "@abhi__khatri"
+			"github": "abhikhatri"
+			"email": "abhikhatri391@gmail.com"
+		}
+	],
 	"skills": skills,
-	"message": "Abhi Khatri is a web developer"
-
+	"picture": "http://www.abhikhatri.com/build/img/avtaar.jpg",
+	"location": "New Delhi"
 }
 
 
@@ -31,24 +37,27 @@ var education = {
 	"schools": [
 		{
 			"name": "K.G.S.B.V",
+			"location": "New Delhi",
 			"degree": "High School Gradutation",
 			"year": "2013",
-			"Subject": "Commerce"
+			"majors": "Commerce"
 		},
 
 		{
 			"name": "NIIT",
+			"location": "New Delhi",
 			"degree": "Diploma In Computer Science",
 			"year": "2015",
-			"subject": "Computer Science",
+			"majors": "Computer Science",
 		}
 
 	],
 
 	"onlineCourses": [
-		"name": "Udacity JavaScript Syntax",
-		"language": "JavaScript",
-		"website": "www.udacity.com"
+		"title": "Udacity JavaScript Syntax",
+		"school": "Udacity",
+		"dates": "2 weeks",
+		"urk": "www.udacity.com"
 	]
 
 }
@@ -56,4 +65,4 @@ var education = {
 
 var work = {}
 
-var project = {}
+var projects = {}
