@@ -22,8 +22,8 @@ var bio = {
 	"welcomeMessage": "Hello! Welcome to my awesome resume",
 	"contact": [
 		{
-			"twitter": "@abhi__khatri"
-			"github": "abhikhatri"
+			"twitter": "@abhi__khatri",
+			"github": "abhikhatri",
 			"email": "abhikhatri391@gmail.com"
 		}
 	],
@@ -54,15 +54,40 @@ var education = {
 	],
 
 	"onlineCourses": [
-		"title": "Udacity JavaScript Syntax",
-		"school": "Udacity",
-		"dates": "2 weeks",
-		"urk": "www.udacity.com"
+		{
+			"title": "Udacity JavaScript Syntax",
+			"school": "Udacity",
+			"dates": "2 weeks",
+			"url": "www.udacity.com"
+		}
 	]
 
 }
 
 
-var work = {}
+var work = {
+	"jobs": [
+		{
+			"employer": "",
+			"title": "",
+			"location": "",
+			"dates": "",
+			"description": ""
+		}
 
-var projects = {}
+	]
+
+}
+
+var projects = {
+
+	"projects": [
+		{		
+			"title": "",
+			"dates": "",
+			"description": "",
+			"images": []
+		}
+	]
+
+}
