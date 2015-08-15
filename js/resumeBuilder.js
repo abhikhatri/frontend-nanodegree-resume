@@ -6,14 +6,6 @@ var name = "Abhi Khatri"
 var role = "Frontend Developer"
 var skills = ["Frontend Developer", "Thinker", "Entrepreneur", "Art lover"]
 
-// var formattedName = HTMLheaderName.replace("%data%", name);
-
-// var formattedRole = HTMLheaderRole.replace("%data%", role);
-
-// $("#header").prepend(formattedRole);
-// $("#header").prepend(formattedName);
-// 
-
 
 var bio = {
 
@@ -24,7 +16,8 @@ var bio = {
 		{
 			"twitter": "@abhi__khatri",
 			"github": "abhikhatri",
-			"email": "abhikhatri391@gmail.com"
+			"email": "abhikhatri391@gmail.com",
+			"mobile": "123456789"
 		}
 	],
 	"skills": skills,
@@ -90,4 +83,42 @@ var projects = {
 		}
 	]
 
+}
+
+
+var formattedName = HTMLheaderName.replace("%data%", bio.name);
+var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
+var formattedMobile = HTMLmobile.replace("%data%", bio.contact[0].mobile);
+var formattedEmail = HTMLemail.replace("%data%", bio.contact[0].email);
+var formattedTwitter = HTMLtwitter.replace("%data%", bio.contact[0].twitter);
+var formattedGithub = HTMLgithub.replace("%data%", bio.contact[0].github);
+var formattedLocation = HTMLlocation.replace("%data%", bio.location);
+var formattedBioPic = HTMLbioPic.replace("%data%", bio.picture);
+var formattedMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
+var formattedskills = HTMLskills.replace("%data%", bio.skills[0]);
+var formattedskills2 = HTMLskills.replace("%data%", bio.skills[1]);
+var formattedskills3 = HTMLskills.replace("%data%", bio.skills[2]);
+var formattedskills4 = HTMLskills.replace("%data%", bio.skills[3]);
+
+$("#header").prepend(formattedRole);
+$("#header").prepend(formattedName);
+$("#topContacts").append(formattedMobile);
+$("#topContacts").append(formattedEmail);
+$("#topContacts").append(formattedTwitter);
+$("#topContacts").append(formattedGithub);
+$("#topContacts").append(formattedLocation);
+$("#header").append(formattedBioPic);
+$("#header").append(formattedMessage);
+
+$("#header").append(HTMLskillsStart);
+$("#skills").append(formattedskills);
+$("#skills").append(formattedskills2);
+$("#skills").append(formattedskills3);
+$("#skills").append(formattedskills4);
+
+
+
+
+for(skill in skills){
+	console.log(skills[skill]);
 }
